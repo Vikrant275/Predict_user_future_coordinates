@@ -1,0 +1,3 @@
+log_dir : D:\\Pertsol\\Predict_user_future_coordinates\\logs
+artifact: D:\\Pertsol\\Predict_user_future_coordinates\\artifact
+data : D:\\Pertsol\\Predict_user_future_coordinates\\data

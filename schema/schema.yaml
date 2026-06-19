@@ -1,0 +1,43 @@
+columns:
+  phone_number : int64
+  timestamp : str
+  latitude : float64
+  longitude : float64
+  hour : int64
+  day_of_week : int64
+  month : int64
+  is_weekend : int64
+  hour_sin : float64
+  hour_cos : float64
+  location_id : int64
+  prev_location_1 : float64
+  prev_location_2 : float64
+  prev_location_3 : float64
+  prev_lat : float64
+  prev_lon : float64
+  distance_from_prev_km : float64
+  anomaly_flag : int64
+  travel_radius_24h : float64
+  target_next_location : float64
+
+numerical_columns:
+  phone_number
+  latitude
+  longitude
+  hour
+  day_of_week
+  month
+  is_weekend
+  hour_sin
+  hour_cos
+  location_id
+  prev_location_1
+  prev_location_2
+  prev_location_3
+  prev_lat
+  prev_lon
+  distance_from_prev_km
+  anomaly_flag
+  travel_radius_24h
+  target_next_location
+

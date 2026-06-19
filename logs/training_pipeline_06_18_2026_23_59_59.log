@@ -1,0 +1,27 @@
+2026-06-19 00:00:01,758 - INFO - Starting pipeline execution - root - 53
+2026-06-19 00:00:01,758 - INFO - Starting data ingestion - root - 24
+2026-06-19 00:00:01,758 - INFO - Initiating data ingestion - root - 65
+2026-06-19 00:00:01,758 - INFO - Exporting input data to dataframe from path: D:\\Pertsol\\Predict_user_future_coordinates\raw_data\location_dataset_3_months.csv - root - 29
+2026-06-19 00:00:01,767 - INFO - Exported input data to dataframe - root - 33
+2026-06-19 00:00:01,767 - INFO - Exporting feature store to dataframe - root - 46
+2026-06-19 00:00:01,768 - INFO - successfully created feature store D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_19_2026_00_00_01\data_ingestion\feature_store.csv - root - 49
+2026-06-19 00:00:01,778 - INFO - Exported feature store to dataframe - root - 53
+2026-06-19 00:00:01,778 - INFO - Data ingestion initiated successfully - root - 29
+2026-06-19 00:00:01,778 - INFO - Starting feature engineering - root - 38
+2026-06-19 00:00:01,778 - INFO - Initiating feature engineering - root - 197
+2026-06-19 00:00:01,783 - INFO - Feature Engineering data has been read - root - 200
+2026-06-19 00:00:01,783 - INFO - Creating Time Feature - root - 202
+2026-06-19 00:00:01,790 - INFO - Created Successfully Time Feature - root - 204
+2026-06-19 00:00:01,790 - INFO - Creating Cyclical Feature - root - 206
+2026-06-19 00:00:01,791 - INFO - Created Successfully Cyclical Feature - root - 208
+2026-06-19 00:00:01,791 - INFO - Creating Cluster Feature - root - 210
+2026-06-19 00:00:01,867 - INFO - Created Successfully Cluster Feature - root - 212
+2026-06-19 00:00:01,867 - INFO - Creating Previous Location Feature - root - 214
+2026-06-19 00:00:01,868 - INFO - Created Successfully Previous Location Feature - root - 216
+2026-06-19 00:00:01,869 - INFO - Creating Distance Feature - root - 218
+2026-06-19 00:00:01,901 - INFO - Created Successfully Distance Feature - root - 220
+2026-06-19 00:00:01,901 - INFO - Creating Traget Feature - root - 222
+2026-06-19 00:00:01,903 - INFO - Created Successfully Traget Feature - root - 224
+2026-06-19 00:00:01,904 - ERROR - Cannot save file into a non-existent directory: 'D:\Pertsol\Predict_user_future_coordinates\artifact\06_19_2026_00_00_01\feature_eng' - root - 236
+2026-06-19 00:00:01,904 - ERROR - Error occurred in python script name [D:\Pertsol\Predict_user_future_coordinates\src\component\feature_engineering.py] line no. [226] error message [Cannot save file into a non-existent directory: 'D:\Pertsol\Predict_user_future_coordinates\artifact\06_19_2026_00_00_01\feature_eng']  - root - 47
+2026-06-19 00:00:01,904 - ERROR - Error occurred in python script name [D:\Pertsol\Predict_user_future_coordinates\src\pipeline\training_pipeline.py] line no. [42] error message [Error occurred in python script name [D:\Pertsol\Predict_user_future_coordinates\src\component\feature_engineering.py] line no. [226] error message [Cannot save file into a non-existent directory: 'D:\Pertsol\Predict_user_future_coordinates\artifact\06_19_2026_00_00_01\feature_eng'] ]  - root - 62

@@ -1,0 +1,26 @@
+2026-06-19 00:03:56,032 - INFO - Starting pipeline execution - root - 53
+2026-06-19 00:03:56,033 - INFO - Starting data ingestion - root - 24
+2026-06-19 00:03:56,033 - INFO - Initiating data ingestion - root - 65
+2026-06-19 00:03:56,033 - INFO - Exporting input data to dataframe from path: D:\\Pertsol\\Predict_user_future_coordinates\raw_data\location_dataset_3_months.csv - root - 29
+2026-06-19 00:03:56,040 - INFO - Exported input data to dataframe - root - 33
+2026-06-19 00:03:56,040 - INFO - Exporting feature store to dataframe - root - 46
+2026-06-19 00:03:56,041 - INFO - successfully created feature store D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_19_2026_00_03_56\data_ingestion\feature_store.csv - root - 49
+2026-06-19 00:03:56,054 - INFO - Exported feature store to dataframe - root - 53
+2026-06-19 00:03:56,054 - INFO - Data ingestion initiated successfully - root - 29
+2026-06-19 00:03:56,054 - INFO - Starting feature engineering - root - 38
+2026-06-19 00:03:56,054 - INFO - Initiating feature engineering - root - 197
+2026-06-19 00:03:56,059 - INFO - Feature Engineering data has been read - root - 200
+2026-06-19 00:03:56,059 - INFO - Creating Time Feature - root - 202
+2026-06-19 00:03:56,065 - INFO - Created Successfully Time Feature - root - 204
+2026-06-19 00:03:56,065 - INFO - Creating Cyclical Feature - root - 206
+2026-06-19 00:03:56,067 - INFO - Created Successfully Cyclical Feature - root - 208
+2026-06-19 00:03:56,067 - INFO - Creating Cluster Feature - root - 210
+2026-06-19 00:03:56,139 - INFO - Created Successfully Cluster Feature - root - 212
+2026-06-19 00:03:56,139 - INFO - Creating Previous Location Feature - root - 214
+2026-06-19 00:03:56,141 - INFO - Created Successfully Previous Location Feature - root - 216
+2026-06-19 00:03:56,141 - INFO - Creating Distance Feature - root - 218
+2026-06-19 00:03:56,171 - INFO - Created Successfully Distance Feature - root - 220
+2026-06-19 00:03:56,171 - INFO - Creating Traget Feature - root - 222
+2026-06-19 00:03:56,174 - INFO - Created Successfully Traget Feature - root - 224
+2026-06-19 00:03:56,200 - INFO - Feature engineering initiated successfully - root - 43
+2026-06-19 00:03:56,200 - INFO - Training pipeline executed successfully - root - 59
