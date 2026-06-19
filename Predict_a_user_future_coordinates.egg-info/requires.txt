@@ -13,3 +13,5 @@ werkzeug
 flask_limiter
 pymongo
 certifi
+xgboost
+mlflow

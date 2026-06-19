@@ -1,0 +1,70 @@
+2026-06-20 01:18:28,672 - INFO - Starting pipeline execution - root - 104
+2026-06-20 01:18:28,673 - INFO - Starting data ingestion - root - 33
+2026-06-20 01:18:28,673 - INFO - Initiating data ingestion - root - 65
+2026-06-20 01:18:28,673 - INFO - Exporting input data to dataframe from path: D:\\Pertsol\\Predict_user_future_coordinates\raw_data\location_dataset_3_months.csv - root - 29
+2026-06-20 01:18:28,678 - INFO - Exported input data to dataframe - root - 33
+2026-06-20 01:18:28,678 - INFO - Exporting feature store to dataframe - root - 46
+2026-06-20 01:18:28,678 - INFO - successfully created feature store D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\data_ingestion\feature_store.csv - root - 49
+2026-06-20 01:18:28,686 - INFO - Exported feature store to dataframe - root - 53
+2026-06-20 01:18:28,686 - INFO - Data ingestion initiated successfully - root - 38
+2026-06-20 01:18:28,686 - INFO - Starting feature engineering - root - 47
+2026-06-20 01:18:28,686 - INFO - Initiating feature engineering - root - 214
+2026-06-20 01:18:28,689 - INFO - Feature Engineering data has been read - root - 217
+2026-06-20 01:18:28,689 - INFO - Creating Time Feature - root - 219
+2026-06-20 01:18:28,693 - INFO - Created Successfully Time Feature - root - 221
+2026-06-20 01:18:28,693 - INFO - Creating Cyclical Feature - root - 223
+2026-06-20 01:18:28,694 - INFO - Created Successfully Cyclical Feature - root - 225
+2026-06-20 01:18:28,694 - INFO - Creating Cluster Feature - root - 227
+2026-06-20 01:18:28,734 - INFO - Created Successfully Cluster Feature - root - 229
+2026-06-20 01:18:28,734 - INFO - Creating Previous Location Feature - root - 231
+2026-06-20 01:18:28,735 - INFO - Created Successfully Previous Location Feature - root - 233
+2026-06-20 01:18:28,735 - INFO - Creating Distance Feature - root - 235
+2026-06-20 01:18:28,762 - INFO - Created Successfully Distance Feature - root - 237
+2026-06-20 01:18:28,762 - INFO - Creating Traget Feature - root - 239
+2026-06-20 01:18:28,764 - INFO - Created Successfully Traget Feature - root - 241
+2026-06-20 01:18:28,794 - INFO - Feature engineering initiated successfully - root - 52
+2026-06-20 01:18:28,795 - INFO - Starting data validation - root - 62
+2026-06-20 01:18:28,795 - INFO - Reading schema file D:\Pertsol\Predict_user_future_coordinates\schema\schema.yaml - root - 13
+2026-06-20 01:18:28,797 - INFO - Initiating data validation - root - 95
+2026-06-20 01:18:28,807 - INFO - Required no. of columns: 20 - root - 25
+2026-06-20 01:18:28,807 - INFO - columns in dataframe : 20 - root - 26
+2026-06-20 01:18:28,808 - INFO - Required no. of null values: 0 - root - 40
+2026-06-20 01:18:28,808 - INFO - Required no. of numeric values: 19 - root - 53
+2026-06-20 01:18:28,808 - ERROR - Number of numeric values does not match number of columns in dataframe - root - 55
+2026-06-20 01:18:28,808 - INFO - Spliting data into train and test - root - 102
+2026-06-20 01:18:28,810 - INFO - Saving train file at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_01_18_28\\validation\\training.csv'] - root - 105
+2026-06-20 01:18:28,836 - INFO - Saved train file successully  at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_01_18_28\\validation\\training.csv'] - root - 110
+2026-06-20 01:18:28,836 - INFO - Saving test file at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_01_18_28\\validation\\test.csv'] - root - 112
+2026-06-20 01:18:28,843 - INFO - Saved test file successully  at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_01_18_28\\validation\\test.csv'] - root - 117
+2026-06-20 01:18:28,843 - INFO - Data validation initiated successfully - root - 67
+2026-06-20 01:18:28,843 - INFO - Starting data transformation - root - 76
+2026-06-20 01:18:28,843 - INFO - reading training data and testing data - root - 67
+2026-06-20 01:18:28,861 - INFO - successfully apply data transformation on train and test data - root - 72
+2026-06-20 01:18:28,862 - INFO - Saving numpy array data - root - 72
+2026-06-20 01:18:28,863 - INFO - Saved successfully numpy array data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\train.npy - root - 77
+2026-06-20 01:18:28,864 - INFO - Saved scaled train array at ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_01_18_28\\transformation_dir\\train.npy'] with shape (1708, 18) - root - 78
+2026-06-20 01:18:28,864 - INFO - Saving numpy array data - root - 72
+2026-06-20 01:18:28,864 - INFO - Saved successfully numpy array data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\test.npy - root - 77
+2026-06-20 01:18:28,864 - INFO - Saved scaled test array at ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_01_18_28\\transformation_dir\\test.npy'] with shape (428, 18) - root - 82
+2026-06-20 01:18:28,864 - INFO - Saving object data - root - 91
+2026-06-20 01:18:28,865 - INFO - Saved successfully object data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\preprocessing.pkl - root - 96
+2026-06-20 01:18:28,865 - INFO - Saving object data - root - 91
+2026-06-20 01:18:28,865 - INFO - Saved successfully object data to final_preprocessor/preprocessor.pkl - root - 96
+2026-06-20 01:18:28,865 - INFO - Data transformation initiated successfully - root - 81
+2026-06-20 01:18:28,865 - INFO - Starting model training - root - 90
+2026-06-20 01:18:28,865 - INFO - Initiating model training - root - 141
+2026-06-20 01:18:28,865 - INFO - loading training data from D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\train.npy - root - 146
+2026-06-20 01:18:28,865 - INFO - Loading numpy array data - root - 108
+2026-06-20 01:18:28,866 - INFO - Loaded successfully numpy array data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\train.npy - root - 115
+2026-06-20 01:18:28,866 - INFO - loading test data from D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\test.npy - root - 149
+2026-06-20 01:18:28,866 - INFO - Loading numpy array data - root - 108
+2026-06-20 01:18:28,866 - INFO - Loaded successfully numpy array data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_01_18_28\transformation_dir\test.npy - root - 115
+2026-06-20 01:18:28,866 - INFO - splitting training  and testing data into input feature and output feature  - root - 152
+2026-06-20 01:18:28,866 - INFO - Evaluating model.... - root - 44
+2026-06-20 01:18:49,656 - INFO - ('GradientBoostingClassifier', {'best_model': GradientBoostingClassifier(max_depth=10, min_samples_split=10, n_estimators=200), 'f1_score_test': 0.780373831775701, 'precision_test': 0.780373831775701, 'recall_test': 0.780373831775701}) ------------ - root - 94
+2026-06-20 01:18:49,657 - INFO - model evaluation successfully - root - 97
+2026-06-20 01:18:49,657 - INFO - best model: GradientBoostingClassifier(max_depth=10, min_samples_split=10, n_estimators=200)  with best score: {'best_model': GradientBoostingClassifier(max_depth=10, min_samples_split=10, n_estimators=200), 'f1_score_test': 0.780373831775701, 'precision_test': 0.780373831775701, 'recall_test': 0.780373831775701} - root - 98
+2026-06-20 01:18:49,676 - INFO - mlflow tracking started - root - 107
+2026-06-20 01:18:49,681 - ERROR - The filesystem tracking backend (e.g., './mlruns') is in maintenance mode and will not receive further updates. Please migrate to a database backend (e.g., 'sqlite:///mlflow.db') to access the latest MLflow features. The `mlflow migrate-filestore` tool migrates your existing data losslessly. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance. If the filesystem backend is required for your workflow, set `MLFLOW_ALLOW_FILE_STORE=true` to opt out of this exception. - root - 165
+2026-06-20 01:18:49,681 - ERROR - Error occurred in python script name [D:\Pertsol\Predict_user_future_coordinates\src\component\model_trainer.py] line no. [161] error message [The filesystem tracking backend (e.g., './mlruns') is in maintenance mode and will not receive further updates. Please migrate to a database backend (e.g., 'sqlite:///mlflow.db') to access the latest MLflow features. The `mlflow migrate-filestore` tool migrates your existing data losslessly. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance. If the filesystem backend is required for your workflow, set `MLFLOW_ALLOW_FILE_STORE=true` to opt out of this exception.]  - root - 99
+2026-06-20 01:18:49,681 - ERROR - Error occurred in python script name [D:\Pertsol\Predict_user_future_coordinates\src\pipeline\training_pipeline.py] line no. [94] error message [Error occurred in python script name [D:\Pertsol\Predict_user_future_coordinates\src\component\model_trainer.py] line no. [161] error message [The filesystem tracking backend (e.g., './mlruns') is in maintenance mode and will not receive further updates. Please migrate to a database backend (e.g., 'sqlite:///mlflow.db') to access the latest MLflow features. The `mlflow migrate-filestore` tool migrates your existing data losslessly. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance. If the filesystem backend is required for your workflow, set `MLFLOW_ALLOW_FILE_STORE=true` to opt out of this exception.] ]  - root - 116

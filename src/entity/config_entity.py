@@ -62,4 +62,33 @@ class DataValidationConfig:
             raise MyException(e,sys)
 
 
+class DataTransformationConfig:
+    def __init__(self,training_pipeline:TrainingPipelineConfig):
+        try:
+            self.training_pipeline = training_pipeline
 
+            self.data_transformation_dir: str = os.path.join(training_pipeline.artifact_dir,
+                                                             DATA_TRANSFORMATION_DIR_NAME)
+            self.transformed_train_file_path: str = os.path.join(self.data_transformation_dir,
+                                                                 DATA_TRANSFORMATION_TRAIN_FILE)
+            self.transformed_test_file_path: str = os.path.join(self.data_transformation_dir,
+                                                                DATA_TRANSFORMATION_TEST_FILE)
+            self.transformed_object_file_path: str = os.path.join(self.data_transformation_dir,
+                                                                  DATA_TRANSFORMATION_OBJECT_FILE)
+        except  Exception as e:
+            logging.error(e)
+            raise MyException(e,sys)
+
+class ModelTraningConfig:
+    def __init__(self,training_pipeline:TrainingPipelineConfig):
+        try:
+
+            self.training_pipeline = TrainingPipelineConfig()
+            self.model_training_dir: str = os.path.join(self.training_pipeline.artifact_dir,MODEL_TRAINING_DIR_NAME)
+            self.trained_model_name = os.path.join(self.model_training_dir,MODEL_TRAINING_MODEL_NAME)
+            self.model_trained_expected_score : float = MODEL_TRAINED_EXPECTED_SCORE
+            self.overfitting_underfitting_threshold = MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD
+
+        except Exception as e:
+            logging.error(e)
+            raise MyException(e,sys)

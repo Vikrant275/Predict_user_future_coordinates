@@ -1,3 +1,9 @@
 input_file: D:\\Pertsol\\Predict_user_future_coordinates\raw_data\location_dataset_3_months.csv
 test_data: test.csv
 training_data: training.csv
+transformed_train : train.npy
+transformed_test : test.npy
+transformed_obj : preprocessing.pkl
+model_name : model.pkl
+model_train : model_training
+model_information: D:\\PythonProject3\\CyberSecurity\\networksecurity\\config

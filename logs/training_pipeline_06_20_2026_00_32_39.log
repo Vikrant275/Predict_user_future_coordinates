@@ -1,0 +1,54 @@
+2026-06-20 00:32:41,738 - INFO - Starting pipeline execution - root - 85
+2026-06-20 00:32:41,738 - INFO - Starting data ingestion - root - 28
+2026-06-20 00:32:41,738 - INFO - Initiating data ingestion - root - 65
+2026-06-20 00:32:41,738 - INFO - Exporting input data to dataframe from path: D:\\Pertsol\\Predict_user_future_coordinates\raw_data\location_dataset_3_months.csv - root - 29
+2026-06-20 00:32:41,745 - INFO - Exported input data to dataframe - root - 33
+2026-06-20 00:32:41,745 - INFO - Exporting feature store to dataframe - root - 46
+2026-06-20 00:32:41,746 - INFO - successfully created feature store D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_00_32_41\data_ingestion\feature_store.csv - root - 49
+2026-06-20 00:32:41,753 - INFO - Exported feature store to dataframe - root - 53
+2026-06-20 00:32:41,754 - INFO - Data ingestion initiated successfully - root - 33
+2026-06-20 00:32:41,754 - INFO - Starting feature engineering - root - 42
+2026-06-20 00:32:41,754 - INFO - Initiating feature engineering - root - 214
+2026-06-20 00:32:41,757 - INFO - Feature Engineering data has been read - root - 217
+2026-06-20 00:32:41,757 - INFO - Creating Time Feature - root - 219
+2026-06-20 00:32:41,760 - INFO - Created Successfully Time Feature - root - 221
+2026-06-20 00:32:41,760 - INFO - Creating Cyclical Feature - root - 223
+2026-06-20 00:32:41,760 - INFO - Created Successfully Cyclical Feature - root - 225
+2026-06-20 00:32:41,760 - INFO - Creating Cluster Feature - root - 227
+2026-06-20 00:32:41,812 - INFO - Created Successfully Cluster Feature - root - 229
+2026-06-20 00:32:41,812 - INFO - Creating Previous Location Feature - root - 231
+2026-06-20 00:32:41,813 - INFO - Created Successfully Previous Location Feature - root - 233
+2026-06-20 00:32:41,813 - INFO - Creating Distance Feature - root - 235
+2026-06-20 00:32:41,839 - INFO - Created Successfully Distance Feature - root - 237
+2026-06-20 00:32:41,839 - INFO - Creating Traget Feature - root - 239
+2026-06-20 00:32:41,841 - INFO - Created Successfully Traget Feature - root - 241
+2026-06-20 00:32:41,865 - INFO - Feature engineering initiated successfully - root - 47
+2026-06-20 00:32:41,865 - INFO - Starting data validation - root - 57
+2026-06-20 00:32:41,865 - INFO - Reading schema file D:\Pertsol\Predict_user_future_coordinates\schema\schema.yaml - root - 13
+2026-06-20 00:32:41,867 - INFO - Initiating data validation - root - 95
+2026-06-20 00:32:41,875 - INFO - Required no. of columns: 20 - root - 25
+2026-06-20 00:32:41,875 - INFO - columns in dataframe : 20 - root - 26
+2026-06-20 00:32:41,876 - INFO - Required no. of null values: 0 - root - 40
+2026-06-20 00:32:41,877 - INFO - Required no. of numeric values: 19 - root - 53
+2026-06-20 00:32:41,877 - ERROR - Number of numeric values does not match number of columns in dataframe - root - 55
+2026-06-20 00:32:41,877 - INFO - Spliting data into train and test - root - 102
+2026-06-20 00:32:41,879 - INFO - Saving train file at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_00_32_41\\validation\\training.csv'] - root - 105
+2026-06-20 00:32:41,890 - INFO - Saved train file successully  at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_00_32_41\\validation\\training.csv'] - root - 110
+2026-06-20 00:32:41,890 - INFO - Saving test file at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_00_32_41\\validation\\test.csv'] - root - 112
+2026-06-20 00:32:41,895 - INFO - Saved test file successully  at location ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_00_32_41\\validation\\test.csv'] - root - 117
+2026-06-20 00:32:41,896 - INFO - Data validation initiated successfully - root - 62
+2026-06-20 00:32:41,896 - INFO - Starting data transformation - root - 71
+2026-06-20 00:32:41,896 - INFO - reading training data and testing data - root - 67
+2026-06-20 00:32:41,926 - INFO - successfully apply data transformation on train and test data - root - 72
+2026-06-20 00:32:41,926 - INFO - Saving numpy array data - root - 72
+2026-06-20 00:32:41,928 - INFO - Saved successfully numpy array data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_00_32_41\transformation_dir\train.npy - root - 77
+2026-06-20 00:32:41,928 - INFO - Saved scaled train array at ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_00_32_41\\transformation_dir\\train.npy'] with shape (1708, 18) - root - 78
+2026-06-20 00:32:41,928 - INFO - Saving numpy array data - root - 72
+2026-06-20 00:32:41,928 - INFO - Saved successfully numpy array data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_00_32_41\transformation_dir\test.npy - root - 77
+2026-06-20 00:32:41,928 - INFO - Saved scaled test array at ['D:\\\\Pertsol\\\\Predict_user_future_coordinates\\\\artifact\\06_20_2026_00_32_41\\transformation_dir\\test.npy'] with shape (428, 18) - root - 82
+2026-06-20 00:32:41,928 - INFO - Saving object data - root - 91
+2026-06-20 00:32:41,930 - INFO - Saved successfully object data to D:\\Pertsol\\Predict_user_future_coordinates\\artifact\06_20_2026_00_32_41\transformation_dir\preprocessing.pkl - root - 96
+2026-06-20 00:32:41,930 - INFO - Saving object data - root - 91
+2026-06-20 00:32:41,931 - INFO - Saved successfully object data to final_preprocessor/preprocessor.pkl - root - 96
+2026-06-20 00:32:41,931 - INFO - Data transformation initiated successfully - root - 76
+2026-06-20 00:32:41,931 - INFO - Training pipeline executed successfully - root - 93

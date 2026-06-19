@@ -89,6 +89,7 @@ class DataValidation:
             logging.error(e)
             raise MyException(e,sys)
 
+
     def initiate_data_validation(self):
         try:
             logging.info("Initiating data validation")
@@ -119,6 +120,8 @@ class DataValidation:
                 training_data= self.data_validation_config.training_data_file_name,
                 testing_data= self.data_validation_config.testing_data_file_name
             )
+
+            return data_validation_artifact
 
         except Exception as e:
             logging.error(e)

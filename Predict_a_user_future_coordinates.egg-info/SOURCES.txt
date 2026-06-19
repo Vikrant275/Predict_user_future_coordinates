@@ -13,7 +13,9 @@ framework/constant/__init__.py
 src/__init__.py
 src/component/__init__.py
 src/component/data_ingestion.py
+src/component/data_transformation.py
 src/component/feature_engineering.py
+src/component/model_trainer.py
 src/component/validation.py
 src/constant/__init__.py
 src/entity/__init__.py
@@ -22,4 +24,5 @@ src/entity/config_entity.py
 src/pipeline/__init__.py
 src/pipeline/training_pipeline.py
 src/utils/__init__.py
+src/utils/ml_utils.py
 src/utils/utils.py
