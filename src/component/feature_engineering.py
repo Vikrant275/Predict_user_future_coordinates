@@ -7,6 +7,12 @@ from framework.logger import logging
 from sklearn.cluster import DBSCAN
 
 
+from math import radians
+from math import sin
+from math import cos
+from math import sqrt
+from math import atan2
+
 from src.entity.config_entity import FeatureStoreConfig
 from src.entity.artifact_entity import FeatureStoreArtifact
 from src.entity.artifact_entity import DataIngestionArtifact
@@ -111,11 +117,6 @@ class FeatureEng:
 
     def create_distance_travelled_feature(self, gps_df : pd.DataFrame) -> pd.DataFrame:
         try:
-            from math import radians
-            from math import sin
-            from math import cos
-            from math import sqrt
-            from math import atan2
 
             '''The Haversine formula calculates the shortest distance 
                 between two points on the surface of a sphere (the Earth) given their longitudes and latitudes
